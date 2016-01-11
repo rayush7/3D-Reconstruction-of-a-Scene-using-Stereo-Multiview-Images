@@ -1,0 +1,2 @@
+/home/ayush/Live_Project/BTP/build/CMakeFiles/ExploringSfMExec.dir
+/home/ayush/Live_Project/BTP/build/CMakeFiles/ExploringSfMLibrary.dir

@@ -1,0 +1,208 @@
+=========================== Load Images ===========================
+...
+ -------------------- extract feature points for all images -------------------
+ ------------------------------------- done -----------------------------------
+------------ Match 0005.png,0004.png ------------
+imgpts1 has 19343 points (descriptors 19343)
+imgpts2 has 21020 points (descriptors 21020)
+F keeping 8538 / 12522
+12522 matches before, 8538 new matches after Fundamental Matrix
+------------ Match 0005.png,0006.png ------------
+imgpts1 has 19343 points (descriptors 19343)
+imgpts2 has 20055 points (descriptors 20055)
+F keeping 8712 / 12147
+12147 matches before, 8712 new matches after Fundamental Matrix
+------------ Match 0004.png,0006.png ------------
+imgpts1 has 21020 points (descriptors 21020)
+imgpts2 has 20055 points (descriptors 20055)
+F keeping 6034 / 11338
+11338 matches before, 6034 new matches after Fundamental Matrix
+======================================================================
+======================== Depth Recovery Start ========================
+======================================================================
+F keeping 8538 / 12522
+12522 matches before, 8538 new matches after Fundamental Matrix
+F keeping 8712 / 12147
+12147 matches before, 8712 new matches after Fundamental Matrix
+F keeping 6034 / 11338
+11338 matches before, 6034 new matches after Fundamental Matrix
+=========================== Baseline triangulation ===========================
+Find highest match...[0,1 = 69] [0,2 = 66] [1,0 = 69] [1,2 = 55] [2,0 = 66] [2,1 = 55] 
+ -------- 0004.png and 0006.png -------- 
+Find camera matrices...F keeping 5964 / 6034
+6034 matches before, 5964 new matches after Fundamental Matrix
+det(E) != 0 : 4.53485e-07
+ -------- 0006.png and 0004.png -------- 
+Find camera matrices...F keeping 5964 / 6034
+6034 matches before, 5964 new matches after Fundamental Matrix
+det(E) != 0 : -1.8284e-07
+ -------- 0005.png and 0006.png -------- 
+Find camera matrices...F keeping 8400 / 8712
+8712 matches before, 8400 new matches after Fundamental Matrix
+det(E) != 0 : -1.26278e-06
+ -------- 0006.png and 0005.png -------- 
+Find camera matrices...F keeping 8389 / 8712
+8712 matches before, 8389 new matches after Fundamental Matrix
+det(E) != 0 : -5.18324e-07
+ -------- 0005.png and 0004.png -------- 
+Find camera matrices...F keeping 8455 / 8538
+8538 matches before, 8455 new matches after Fundamental Matrix
+det(E) != 0 : -2.5966e-06
+ -------- 0004.png and 0005.png -------- 
+Find camera matrices...F keeping 8457 / 8538
+8538 matches before, 8457 new matches after Fundamental Matrix
+----------------------- SVD ------------------------
+U:
+[-0.06715695002083022, 0.3428329403013378, -0.9369928063268357;
+  0.9890462654825795, 0.1465943076692552, -0.01725090414832326;
+  -0.1314436335425288, 0.9278877539893019, 0.3489224658829326]
+W:
+[26.20899322368658;
+  24.06351842422939;
+  1.343919112042902e-10]
+Vt:
+[0.5095243013386644, 0.16136961366079, 0.8451892297777542;
+  0.09561884598792798, -0.9867920217613841, 0.1307613936910167;
+  0.8551269044050027, 0.0141899110302892, -0.5182244916902999]
+----------------------------------------------------
+det(R) == -1 [-1]: flip E's sign
+----------------------- SVD ------------------------
+U:
+[0.06715695002083022, -0.3428329403013378, 0.9369928063268357;
+  -0.9890462654825795, -0.1465943076692552, 0.01725090414832326;
+  0.1314436335425288, -0.9278877539893019, -0.3489224658829326]
+W:
+[26.20899322368658;
+  24.06351842422939;
+  1.343919112042902e-10]
+Vt:
+[0.5095243013386644, 0.16136961366079, 0.8451892297777542;
+  0.09561884598792798, -0.9867920217613841, 0.1307613936910167;
+  0.8551269044050027, 0.0141899110302892, -0.5182244916902999]
+----------------------------------------------------
+Testing P1 
+[0.6201445734800433, 0.02424296791756252, -0.7841128659126843, 0.9369928063268357;
+  0.03462981260125472, -0.9993940419295032, -0.003510702922846408, 0.01725090414832326;
+  -0.7837228362517306, -0.02497653823808526, -0.6206083213067519, -0.3489224658829326]
+Triangulating...Done. (8457points, 0.125976s, mean reproj err = 28.6467)
+Triangulating...Done. (8457points, 0.197078s, mean reproj err = 26.1365)
+0/8457 = 0% are in front of camera
+Testing P1 
+[0.6201445734800433, 0.02424296791756252, -0.7841128659126843, -0.9369928063268357;
+  0.03462981260125472, -0.9993940419295032, -0.003510702922846408, -0.01725090414832326;
+  -0.7837228362517306, -0.02497653823808526, -0.6206083213067519, 0.3489224658829326]
+Triangulating...Done. (8457points, 0.503268s, mean reproj err = 28.6467)
+Triangulating...Done. (8457points, 0.448765s, mean reproj err = 26.1365)
+8457/8457 = 100% are in front of camera
+0/8457 = 0% are in front of camera
+Testing P1 
+[0.9823509423680032, 0.002348721198035076, -0.1870323756396999, 0.9369928063268357;
+  -0.005126388076168531, 0.9998836195196167, -0.01436897914407941, 0.01725090414832326;
+  0.186976859996066, 0.0150741807433894, 0.9822486563497694, -0.3489224658829326]
+Triangulating...Done. (8457points, 0.470019s, mean reproj err = 28.8254)
+Triangulating...Done. (8457points, 0.463268s, mean reproj err = 26.3414)
+8455/8457 = 99.9764% are in front of camera
+8455/8457 = 99.9764% are in front of camera
+Done. (2.28541s)
+ Triangulate 0005.png and 0004.png
+Triangulating...Done. (8457points, 0.452041s, mean reproj err = 28.8254)
+triangulation reproj error 28.8254
+8455/8457 = 99.9764% are in front of camera
+8455/8457 = 99.9764% are in front of camera
+filtered out 6052 high-error points
+0/2405 points were found in other views, adding 2405 new
+before triangulation: 0 after 2405
+Taking baseline from 0004.png and 0005.png
+======================== Bundle Adjustment ==========================
+N (cams) = 2 M (points) = 2405 K (measurements) = 4810
+intrinsic before bundle = [ 3072 0 1536 
+0 3072 1024 
+0 0 1 ]
+Read the 3D points.
+Read the cameras.
+Read 4810 valid 2D measurements.
+mean reprojection error (in pixels): 6.91241
+K0 = [ 1 0 0.5 
+0 1 0.333333 
+0 0 1 ]
+optimizer status = 0
+refined K = [ 0.936333 0 0.451323 
+0 0.936333 0.363319 
+0 0 1 ]
+Knew = [ 2876.41 0 1386.46 
+0 2876.41 1116.11 
+0 0 1 ]
+mean reprojection error (in pixels): 0.34622
+use new K 
+[2876.414145741599, 0, 1386.46431172844;
+  0, 2876.414145741599, 1116.114922471506;
+  0, 0, 1]
+Creating point cloud...Done. (0.000457663s)
+Creating point cloud...Done. (0.000396465s)
+Show cloud: show cloud A
+0006.png: showing 2 cameras
+showing 2 lines
+found 1474 3d-2d point correspondences
+-------------------------- 0006.png --------------------------
+found t = [1.426719680564405;
+  -0.166050199820885;
+  -0.333711139580898]
+R = 
+[0.9682203287065175, 0.01179674977902118, -0.2498203990351754;
+  -0.01413941178658277, 0.9998712657254957, -0.007584788119957738;
+  0.2496987627397713, 0.01087605954132154, 0.9682624846678101]
+ -> 0005.png
+ Triangulate 0006.png and 0005.png
+Triangulating...Done. (8400points, 0.141808s, mean reproj err = 0.796148)
+triangulation reproj error 0.796148
+8400/8400 = 100% are in front of camera
+8400/8400 = 100% are in front of camera
+filtered out 18 high-error points
+899/8382 points were found in other views, adding 7483 new
+before triangulation: 2405 after 9888
+ -> 0004.png
+ Triangulate 0006.png and 0004.png
+Triangulating...Done. (5964points, 0.0920113s, mean reproj err = 1.04066)
+triangulation reproj error 1.04066
+5951/5964 = 99.782% are in front of camera
+5951/5964 = 99.782% are in front of camera
+filtered out 137 high-error points
+3778/5827 points were found in other views, adding 2049 new
+before triangulation: 9888 after 11937
+======================== Bundle Adjustment ==========================
+N (cams) = 3 M (points) = 11937 K (measurements) = 27821
+intrinsic before bundle = [ 2876.41 0 1386.46 
+0 2876.41 1116.11 
+0 0 1 ]
+Read the 3D points.
+Read the cameras.
+Read 27821 valid 2D measurements.
+mean reprojection error (in pixels): 2.03741
+K0 = [ 1 0 0.482011 
+0 1 0.388023 
+0 0 1 ]
+optimizer status = 0
+refined K = [ 0.959298 0 0.511699 
+0 0.959298 0.373201 
+0 0 1 ]
+Knew = [ 2759.34 0 1471.86 
+0 2759.34 1073.48 
+0 0 1 ]
+mean reprojection error (in pixels): 0.97054
+use new K 
+[2759.338980598314, 0, 1471.857402912586;
+  0, 2759.338980598314, 1073.481923299883;
+  0, 0, 1]
+Creating point cloud...Done. (0.00179683s)
+Creating point cloud...Done. (0.00183509s)
+Show cloud: show cloud A
+======================================================================
+========================= Depth Recovery DONE ========================
+======================================================================
+showing 3 cameras
+showing 3 lines
+Creating point cloud...Done. (0.00187996s)
+Creating point cloud...Done. (0.0020704s)
+Show cloud: show cloud A
+showing 3 cameras
+showing 3 lines
